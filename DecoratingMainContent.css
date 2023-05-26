@@ -221,23 +221,62 @@ ul li.systems:hover ul.dropdown{
     /* left: 250px; Mengatur jarak dari kiri box-background2 */
     /* bottom: 20px; Mengatur jarak dari bawah box-background2 */
     /* right: 20px; Mengatur jarak dari kanan box-background2 */
-    height: 1200px;
     width: 80%;
     background-color: #FFFFFE;
     padding: 30px; /* Mengatur padding dalam box konten */
     z-index: 2; /* Mengatur z-index agar box konten berada di atas box background */
 }
 
-.dropdown {
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 10px 18px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+/* .dropdown {
     position: relative;
     display: block;
     width: 100%;
-    margin-top: 20px; /* Mengatur margin atas untuk dropdown */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan shadow outer */
-    cursor: pointer; /* Menambahkan cursor pointer untuk menunjukkan dropdown dapat di klik */
-}
+    margin-top: 20px; Mengatur margin atas untuk dropdown
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  Menambahkan shadow outer 
+    cursor: pointer;  Menambahkan cursor pointer untuk menunjukkan dropdown dapat di klik 
+} */
 
-.dropdown-content {
+/* .dropdown-content {
     display: none;
     position: absolute;
     background-color: #FFFFFE;
@@ -246,11 +285,11 @@ ul li.systems:hover ul.dropdown{
     padding: 10px;
     z-index: 3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+} */
 
-.dropdown.active .dropdown-content {
+/* .dropdown.active .dropdown-content {
     display: block;
-}
+} */
 
 .quiz-box {
 
@@ -259,38 +298,51 @@ ul li.systems:hover ul.dropdown{
     bottom: 20px; /* Mengatur jarak dari bawah box-background2 */
     right: 20px; /* Mengatur jarak dari kanan box-background2 */
     background-color: #FFFFFE;
+    width: 550px;
     padding: 10px;
     z-index: 3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.inside-quiz-box {
+/*.inside-quiz-box {
 
-    top: 20px; /* Mengatur jarak dari atas box-background2 */
-    left: 20px; /* Mengatur jarak dari kiri box-background2 */
-    bottom: 20px; /* Mengatur jarak dari bawah box-background2 */
-    right: 20px; /* Mengatur jarak dari kanan box-background2 */
+    top: 20px;  
+    left: 20px; 
+    bottom: 20px; 
+    right: 20px; 
     width: 550px;
     background-color: #FFFFFE;
     padding: 10px;
     z-index: 3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .button {
-    display: block;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    text-align: left;
+    border: none;
     background-color: #FFFFFE;
-    color: #000000;
+    color: black;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    margin: 4px 2px;
     cursor: pointer;
-    margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.button-submit {
+.hidden-text1 {
+    display: none;
+    color: green;
+}
+
+.hidden-text2 {
+    display: none;
+    color: red;
+}
+
+/* .button-submit {
     display: block;
     width: 100px;
     height: 40px;
@@ -301,8 +353,4 @@ ul li.systems:hover ul.dropdown{
     cursor: pointer;
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.button.selected {
-    background-color: #D4D4D4;
-}
+} */
