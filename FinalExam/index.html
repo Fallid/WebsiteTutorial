@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/2e367f2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link for FINAL EXAM Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Final Exam</title>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <div id="container-header">
+          <i class="material-icons" id="btn">menu</i>
+          <a href="Dashboard.html" class="home">HOME</a>
+          <a href="#" class="aboutus">ABOUT US</a>
+          <!-- <a class="systems" onclick="toggleDropdown(this)">
+                    OTHER SYSTEM 
+                    <i class="material-icons" style="font-size: 28px;">expand_more</i>
+                </a> -->
+          <ul class="other">
+            <li class="systems">
+              <a href="#">
+                OTHER SYSTEMS
+                <i class="material-icons" style="font-size: 28px"
+                  >expand_more</i
+                >
+              </a>
+              <ul class="dropdown">
+                <li>
+                  <a href="https://infotech.umm.ac.id/simponia/">SIMPONIA</a>
+                </li>
+                <li>
+                  <a
+                    href="https://infotech.umm.ac.id/sevenman/index.php/schedule"
+                    >SEVENMAN</a
+                  >
+                </li>
+                <li>
+                  <a href="https://infotech.umm.ac.id/simutu/">SIMUTU Lab</a>
+                </li>
+                <li>
+                  <a href="https://infotech.umm.ac.id/sirenta/">SIRENTA</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </label>
+      <div class="sidebar">
+        <div class="logo">
+          <img src="Assets/Images/labit.png" />
+        </div>
+        <ul>
+          <li>
+            <div>
+              <a href="MainContent.html">
+                <i class="material-symbols-outlined">terminal</i> Pemrograman
+                Dasar
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="#">
+                <i class="material-symbols-outlined">terminal</i> Pemrograman
+                Lanjut
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="#">
+                <i class="material-symbols-outlined">terminal</i> Pemrograman
+                OOP
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="#">
+                <i class="material-symbols-outlined">terminal</i> Pemrograman
+                Mobile
+              </a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="#">
+                <i class="material-symbols-outlined">terminal</i> Pemrograman
+                Website
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="top-wrapper"></div>
+
+    <!-- FINAL EXAM -->
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Attemp Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+      <div class="info-title"><span>Attention!</span></div>
+      <div class="info-list">
+        <div class="info">
+          1. You will have only <span>15 seconds</span> per each question.
+        </div>
+        <div class="info">
+          2. Once you select your answer, it can't be undone.
+        </div>
+        <div class="info">
+          3. You can't select any option once time goes off.
+        </div>
+        <div class="info">
+          4. You can't exit from the Quiz while you're playing.
+        </div>
+        <div class="info">
+          5. You'll get points on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Cancel</button>
+        <button class="restart">Attemp</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">Awesome Quiz Application</div>
+        <div class="timer">
+          <div class="time_left_txt">Time Left</div>
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div class="que_text">
+          <!-- Question from JavaScript -->
+        </div>
+        <div class="option_list">
+          <!-- Options from JavaScript -->
+        </div>
+      </section>
+
+      <!-- footer Quiz Box -->
+      <footer>
+        <div class="total_que">
+          <!-- Question Count Number from JavaScript -->
+        </div>
+        <button class="next_btn">Next</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Quiz!</div>
+      <div class="score_text">
+        <!-- Score Result from JavaScript -->
+      </div>
+      <div class="buttons">
+        <button class="restart">Reattemp</button>
+        <button class="quit">Finish</button>
+      </div>
+    </div>
+
+    <!-- JavaScript Questions and Options -->
+    <script src="js/questions.js"></script>
+
+    <!-- JavaScript file for all Quiz -->
+    <script src="js/script.js"></script>
+    <!-- FINAL EXAM END -->
+  </body>
+</html>
