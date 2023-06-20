@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/2e367f2ae3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="DecoratingMainContent.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemrograman Dasar</title>
+  </head>
+  <body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <div id="container-header">
+                <i class="material-icons" id="btn">menu</i>
+                <a href="../Dashboard/Dashboard.html" class="home">HOME</a>
+                <a href="https://infotech.umm.ac.id/" class="aboutus">ABOUT US</a>
+                <!-- <a class="systems" onclick="toggleDropdown(this)">
+                    OTHER SYSTEM 
+                    <i class="material-icons" style="font-size: 28px;">expand_more</i>
+                </a> -->
+                <ul class="other">
+                        <li class="systems">
+                            <a href="#">OTHER SYSTEMS <i class="material-icons" style="font-size: 28px;">expand_more</i></a>
+                            <ul class="dropdown" >
+                                <li><a href="https://infotech.umm.ac.id/simponia/">SIMPONIA</a></li>
+                                <li><a href="https://infotech.umm.ac.id/sevenman/index.php/schedule">SEVENMAN</a></li>
+                                <li><a href="https://infotech.umm.ac.id/simutu/">SIMUTU Lab</a></li>
+                                <li><a href="https://infotech.umm.ac.id/sirenta/">SIRENTA</a></li>
+                            </ul>
+                        </li>
+                </ul>
+                
+            </div>
+        </label>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../Assets/Images/labit.png">
+            </div>
+            <ul>
+                <li><div>
+                    <a href="../PemrogramanDasar/MainContent.html"><i class="material-symbols-outlined">terminal</i> Pemrograman Dasar</a>
+                </div></li>
+                <li><div>
+                    <a href="#"><i class="material-symbols-outlined">terminal</i> Pemrograman Lanjut</a>
+                </div></li>
+                <li>
+                    <div>
+                        <a href="#"><i class="material-symbols-outlined">terminal</i> Pemrograman OOP</a>
+                    </div></li>
+                <li><div>
+                    <a href="#"><i class="material-symbols-outlined">terminal</i> Pemrograman Mobile</a>
+                </div></li>
+                <li><div>
+                    <a href="#"><i class="material-symbols-outlined">terminal</i> Pemrograman Website</a>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content-box">
+            <ul id="accordion">
+                <li>
+                    <label for="first">Modul 1 - Judul Materi <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <input type="checkbox" name="accordion" id="first" checked>
+                    <div class="content">
+                        <p>Penjalasan Materi Modul 1 ....................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ............................................................................................................................................................</p>
+                        <h3>Video Penjelasan: </h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/i8olVh8H4H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Atau masuk ke link: </p>
+                    <p>www.iniceritanyalinkvideo.go.id</p>
+                    <br/>
+    
+                    <div class="quiz-box">
+                        <h3>Quiz Section</h3>
+                        <br />
+                        <p>1. Soal Nomor 1 ?</p>
+                        <button class="button" onclick="wronganswer1()">
+                          A. Jawaban Salah
+                        </button>
+                        <button class="button" onclick="wronganswer1()">
+                          B. Jawaban Salah
+                        </button>
+                        <button class="button" onclick="rightanswer1(this)">
+                          C. Jawaban Benar
+                        </button>
+                        <button class="button" onclick="wronganswer1()">
+                          D. Jawaban Salah
+                        </button>
+
+                        <p>2. Soal Nomor 2 ?</p>
+                        <button class="button" onclick="wronganswer1()">
+                        A. Jawaban Salah
+                        </button>
+                        <button class="button" onclick="rightanswer1(this)">
+                            B. Jawaban Benar
+                        </button>
+                        <button class="button" onclick="wronganswer1()">
+                            C. Jawaban Salah
+                        </button>
+                        <button class="button" onclick="wronganswer1()">
+                            D. Jawaban Salah
+                        </button>
+                        <button class="button-submit" onclick="submitanswer(rightanswer1())">Submit
+                            <p id="hidden-text1" class="hidden-text1">GRADE 100%</p>
+                            <p id="hidden-text2" class="hidden-text2">GRADE 50%</p>    
+                            <p id="hidden-text3" class="hidden-text3">GRADE 0%</p>    
+                        </button>
+                        <br />
+                    </div>
+                </li>
+                <li>
+                    <label for="second">Modul 2 - Judul Materi <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <input type="checkbox" name="accordion" id="second" checked>
+                    <div class="content" onclick="toggleDropdown(this)">
+                        <p>Penjalasan Materi Modul 1 ....................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ............................................................................................................................................................</p>
+                        <h3>Video Penjelasan: </h3>
+                    <video width="80%" height="80%" controls>
+                        <source src="C:\Latihan Ngoding\HTMLTutorial\Playground\Assets\Videos\Tes_Video_HTML.m4v" type="video/mp4">
+                    </video>
+                    <p>Atau masuk ke link: </p>
+                    <p>www.iniceritanyalinkvideo.go.id</p>
+                    <br/>
+    
+                        <div class="quiz-box">
+                            <h3>Quiz :</h3>
+                            <h4>1. Soal quiz pertama!</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <h4>2. Soal quiz Kedua?</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <div class="button-submit">Submit</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label for="third">Modul 3 - Judul Materi <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <input type="checkbox" name="accordion" id="third" checked>
+                    <div class="content" onclick="toggleDropdown(this)">
+                        <p>Penjalasan Materi Modul 1 ....................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ............................................................................................................................................................</p>
+                        <h3>Video Penjelasan: </h3>
+                    <video width="80%" height="80%" controls>
+                        <source src="C:\Latihan Ngoding\HTMLTutorial\Playground\Assets\Videos\Tes_Video_HTML.m4v" type="video/mp4">
+                    </video>
+                    <p>Atau masuk ke link: </p>
+                    <p>www.iniceritanyalinkvideo.go.id</p>
+                    <br/>
+    
+                        <div class="quiz-box">
+                            <h3>Quiz :</h3>
+                            <h4>1. Soal quiz pertama!</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <h4>2. Soal quiz Kedua?</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <div class="button-submit">Submit</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label for="four">Modul 4 - Judul Materi <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <input type="checkbox" name="accordion" id="four" checked>
+                    <div class="content" onclick="toggleDropdown(this)">
+                        <p>Penjalasan Materi Modul 1 ....................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ............................................................................................................................................................</p>
+                        <h3>Video Penjelasan: </h3>
+                    <video width="80%" height="80%" controls>
+                        <source src="C:\Latihan Ngoding\HTMLTutorial\Playground\Assets\Videos\Tes_Video_HTML.m4v" type="video/mp4">
+                    </video>
+                    <p>Atau masuk ke link: </p>
+                    <p>www.iniceritanyalinkvideo.go.id</p>
+                    <br/>
+    
+                        <div class="quiz-box">
+                            <h3>Quiz :</h3>
+                            <h4>1. Soal quiz pertama!</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <h4>2. Soal quiz Kedua?</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <div class="button-submit">Submit</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label for="five">Modul 5 - Judul Materi <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <input type="checkbox" name="accordion" id="five" checked>
+                    <div class="content" onclick="toggleDropdown(this)">
+                        <p>Penjalasan Materi Modul 1 ....................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ............................................................................................................................................................</p>
+                        <h3>Video Penjelasan: </h3>
+                    <video width="80%" height="80%" controls>
+                        <source src="C:\Latihan Ngoding\HTMLTutorial\Playground\Assets\Videos\Tes_Video_HTML.m4v" type="video/mp4">
+                    </video>
+                    <p>Atau masuk ke link: </p>
+                    <p>www.iniceritanyalinkvideo.go.id</p>
+                    <br/>
+    
+                        <div class="quiz-box">
+                            <h3>Quiz :</h3>
+                            <h4>1. Soal quiz pertama!</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <h4>2. Soal quiz Kedua?</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <div class="button-submit">Submit</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label for="six">Modul 6 - Judul Materi <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <input type="checkbox" name="accordion" id="six" checked>
+                    <div class="content" onclick="toggleDropdown(this)">
+                        <p>Penjalasan Materi Modul 1 ....................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ................................................................................................................................................................................</p>
+                        <p> ............................................................................................................................................................</p>
+                        <h3>Video Penjelasan: </h3>
+                    <video width="80%" height="80%" controls>
+                        <source src="C:\Latihan Ngoding\HTMLTutorial\Playground\Assets\Videos\Tes_Video_HTML.m4v" type="video/mp4">
+                    </video>
+                    <p>Atau masuk ke link: </p>
+                    <p>www.iniceritanyalinkvideo.go.id</p>
+                    <br/>
+    
+                        <div class="quiz-box">
+                            <h3>Quiz :</h3>
+                            <h4>1. Soal quiz pertama!</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <h4>2. Soal quiz Kedua?</h4>
+                             <div class="inside-quiz-box">
+                             <div class="button" onclick="changeColor(this)">A. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">B. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">C. Jawaban</div>
+                             <div class="button" onclick="changeColor(this)">D. Jawaban</div>
+                             </div>
+                            <br/>
+                            <div class="button-submit">Submit</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                  <label for="seven">Final Quiz <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <input type="checkbox" name="accordion" id="seven" checked>
+                    <div class="content" onclick="toggleDropdown(this)">
+                        <p></p>
+                        <p> </p>
+                        <p> </p>
+                        <p> </p>
+                        <h3> </h3>
+                    
+                    <a href="../FinalExam/FinalQuiz.html"> <span class="material-symbols-outlined"> task </span> Final Exam</a>
+                    <br/>
+                </li>
+            </ul>
+        </div>
+        <script>
+            var value =  0
+            function rightanswer1() {
+                return value+=50;
+            }
+            
+            function wronganswer1() {
+                return value-=50;
+            }
+            
+            function submitanswer(nilai){
+                var hiddenText1 = document.getElementById("hidden-text1");
+                var hiddenText2 = document.getElementById("hidden-text2");
+                var hiddenText3 = document.getElementById("hidden-text3");
+                if (value == 100) {
+                    hiddenText1.style.display = "block";
+                    hiddenText2.style.display = "none";
+                    hiddenText3.style.display = "none";
+                }else if(value == 50){
+                    hiddenText2.style.display = "block";
+                    hiddenText1.style.display = "none";
+                    hiddenText3.style.display = "none";
+                }else if(value <= 0){
+                    hiddenText3.style.display = "block";
+                    hiddenText1.style.display = "none";
+                    hiddenText2.style.display = "none";
+                }
+            }
+        </script>
+        
+    </div>
+</body>
+</html>
