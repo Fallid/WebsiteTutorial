@@ -217,7 +217,6 @@ ul li.systems:hover ul.dropdown{
     height: 60%;
     background-color: #FFFFFE;
     padding: 30px 50px 30px 30px;
-    z-index: 2;
     
 }
 .subcontainer1{
@@ -228,13 +227,11 @@ ul li.systems:hover ul.dropdown{
     border-width: 2px;
     border-color: gray;
     margin-bottom: 20px;
-    z-index: 3;
 }
 .subcontainer2{
     margin-top: 30px;
     width: 1200px;
     height: 60%;
-    z-index: 3;
 }
 
 .lesson-wrapper{
@@ -247,7 +244,6 @@ ul li.systems:hover ul.dropdown{
 
 /* FINAL EXAM */
 .start_btn,
-.info_box,
 .quiz_box,
 .result_box{
     position: absolute;
@@ -256,6 +252,12 @@ ul li.systems:hover ul.dropdown{
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.info_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(0.9);
 }
 
 .info_box.activeInfo,
@@ -283,15 +285,18 @@ ul li.systems:hover ul.dropdown{
     transition: 0.5s;
 }
 
+
 .info_box{
     width: 540px;
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0;
+    visibility: visible;
     pointer-events: none;
     transition: all 0.3s ease;
-    z-index: 5;
 }
 
 .info_box .info-title{
@@ -304,18 +309,18 @@ ul li.systems:hover ul.dropdown{
     border-radius: 5px 5px 0 0;
     font-size: 20px;
     font-weight: 600;
-    z-index: 5;
+    
 }
 
 .info_box .info-list{
     padding: 15px 30px;
-    z-index: 5;
+    
 }
 
 .info_box .info-list .info{
     margin: 5px 0;
     font-size: 17px;
-    z-index: 5;
+    
 }
 
 .info_box .info-list .info span{
@@ -353,6 +358,7 @@ ul li.systems:hover ul.dropdown{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    display: block;
 }
 
 .quiz_box header{
