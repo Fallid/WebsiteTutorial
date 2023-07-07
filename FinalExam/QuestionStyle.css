@@ -15,3 +15,23 @@ body{
     width: 20%;
     background-color: #023B70;
 }
+.timer_box{
+    width: 80%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #FFFFFE;
+    background-color: #0E5699;
+}
+.sidebar .timer_box h1{
+    padding-bottom: 5px;
+    font-weight: normal;
+}
+.sidebar .timer_box p{
+    font-size: 52px;
+    font-weight: 500;
+}
