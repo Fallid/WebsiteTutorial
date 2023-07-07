@@ -344,7 +344,7 @@ ul li.systems:hover ul.dropdown{
     font-weight: 500;
     color: white;
     padding: 15px 30px;
-    /* display: inline; */
+    display: inline;
     outline: none;  
     border: none;
     border-radius: 7px;
@@ -356,22 +356,3 @@ ul li.systems:hover ul.dropdown{
     transition: 0.5s;
 }
 
-#continue_btn{
-    position: sticky;
-    top: 550px;
-    left: 650px;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    padding: 15px 30px;
-    /* display: none; */
-    outline: none;  
-    border: none;
-    border-radius: 7px;
-    background: #023B70;
-    cursor: pointer;
-}
-#continue_btn:hover{
-    background-color: #0E5699;
-    transition: 0.5s;
-}
