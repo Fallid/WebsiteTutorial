@@ -82,7 +82,7 @@ var expire = setInterval(function () {
 const quizData = [
     {
       question: "An entity can only have one Primary UID. True or False?",
-      correct: "True",
+      correct: "a",
       a: "True", 
       b: "False",
   
@@ -90,28 +90,28 @@ const quizData = [
     {
       // numb: 2,
       question: "If an entity has no attribute suitable to be a Primary UID, we can create an artificial one. True or False?",
-      correct: "True",
+      correct: "a",
       a: "True", 
       b: "False",
     },
     {
       // numb: 3,
       question: "There is no limit to how many columns can make up an entity's UID. True or False?",
-      correct: "True",
+      correct: "a",
       a: "True", 
       b: "False",
     },
     {
       // numb: 4,
       question: "A unique identifier can only be made up of one attribute. True or False?",
-      correct: "False",
+      correct: "b",
       a: "True", 
       b: "False",
     },
     {
       // numb: 5,s
       question: "When is an entity in 2nd Normal Form?",
-      correct: "When all non-UID attributes are dependent upon the entire UID.",
+      correct: "a",
       a:"When all non-UID attributes are dependent upon the entire UID.",
       b: "When attributes with repeating or multi-values are present.",
       c: "When no attritibutes are mutually independent and all are fully dependent on the primary key.",
@@ -175,36 +175,38 @@ function loadQuiz(){
 }
 
 function deselectedAnswerd(){
-    answerEls.forEach(answerEl => answerEl.chacked = false);
+    answerEls.forEach(answerEl => answerEl.checked = false);
 }
 
 function getSelected(){
     let answer
     answerEls.forEach(answerEl => {
-        if(answerEl.chacked){
+        if(answerEl.checked){
             answer = answerEl.id
         }
     })
+    localStorage.setItem("option", answer);
     return answer;
 }
 
 //for next question btn
 btnNext.addEventListener('click', () =>{
-    // const answer = getSelected()
-    // if(answer){
-    //     if (answer === quizData[currentQuiz].correct){
-    //         score++;
-    //     }
-    // }
-    currentQuiz++;
-    if(currentQuiz > quizData.length-1){
-        currentQuiz = quizData.length -1;
+    const answer = getSelected()
+    if(answer){
+        if (answer === quizData[currentQuiz].correct){
+            score++;
+            localStorage.setItem("score", score);
+        }
+        currentQuiz++;
+        if(currentQuiz > quizData.length-1){
+            currentQuiz = quizData.length -1;
+        }
+        if(currentQuiz < quizData.length){
+            loadQuiz();
+        } else{
+            '<button onclick="location.reload()"> Reload </button>'
+        } 
     }
-    if(currentQuiz < quizData.length){
-        loadQuiz();
-    } else{
-        '<button onclick="location.reload()"> Reload </button>'
-    } 
 })
 
 //for prev question btn
