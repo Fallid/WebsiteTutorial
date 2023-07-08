@@ -3,7 +3,7 @@ var element; //variabel untuk true or false info_box muncul dan hilang
 var para1 = document.getElementById("start_btn"); //variabel untuk mengubah title element start button
 var para2 = document.getElementById("continue_btn");
 var countdownDate = new Date().getTime() + 1000 * 60 * 60; //variabel untuk mengatur waktu hitung mundur (penjumlahan berfungsi untuk mengatur countdown) 
-var text = "Attemp Quiz";
+
 
 function show_hide() {
     if(localStorage.getItem("continue") == null){
@@ -37,6 +37,7 @@ function cancel(){
     }
 }
 
+//function untuk memulai quiz exam
 function attemp() {
     if (element == 1) {
         document.getElementById("info_box").style.display = "none";
@@ -52,6 +53,7 @@ function attemp() {
     }
 }
 
+//Function untuk countdowntimer
 var expire = setInterval(function () {
     //mendapatkan waktu realtime ketika user memulai quiz
     var realtimes = new Date().getTime();
@@ -74,3 +76,56 @@ var expire = setInterval(function () {
         document.getElementById("countdown").innerHTML = "Waktu Habis";
     }
 }, 1000);
+
+
+//Question Display
+//Question Variabel
+const quiz = document.getElementById("quiz");
+const answerEls = document.querySelectorAll(".answer");
+const questionEls =  document.getElementById("question_text");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const a = document.getElementById("li_a");
+const b = document.getElementById("li_b");
+const c = document.getElementById("li_c");
+const d = document.getElementById("li_d");
+
+let currentQuiz = 0;
+let score = 0;
+
+loadQuiz()
+
+function loadQuiz(){
+    const currentQuizData = quizData[currentQuiz];
+    questionEls.innerText = currentQuizData.question;
+    if(currentQuizData.a == null){
+        a.style.display = "none";        
+
+    }else{
+        a.style.display = "block";
+    }
+    if(currentQuizData.b == null){
+        b.style.display = "none";        
+
+    }else{
+        c.style.display = "block";
+    }
+    if(currentQuizData.c == null){
+        c.style.display = "none";        
+
+    }else{
+        c.style.display = "block";
+    }
+    if(currentQuizData.d == null){
+        d.style.display = "none";
+    }else{
+        d.style.display = "block";
+    }
+
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d; 
+}

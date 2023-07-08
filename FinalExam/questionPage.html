@@ -8,9 +8,8 @@
     <title>Final Exam Pemrograman Dasar</title>
 </head>
 
-<body>
+<body onload="loadQuiz()">
     <header>
-
         <div class="sidebar">
             <div class="timer_box">
                 <h1>Time left</h1>
@@ -75,8 +74,41 @@
             </div>
         </div>
     </header>
-    <div class="container"></div>
+    <div class="container" id="quiz">
+        <div class="content_box">
+            <h1> Final Exam</h1>
+            <h3>(Answer all question in this final exam)</h3>
+            <div class="content_question">
+                <h2 id="question_text"> Question Text</h2>
+                <ul>
+                    <li id="li_a">
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text"> Answer</label>
+                    </li>
+                    <li id="li_b">
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text"> Answer</label>
+                    </li>
+                    <li id="li_c">
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Answer</label>
+                    </li>
+                    <li id="li_d">
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">Answer</label>
+                    </li>
+                </ul>
+
+
+                <footer class="footer_question">
+                    <button id="prev_btn"> Previous</button>
+                    <button id="next_btn"> Next</button>
+                </footer>
+            </div>
+        </div>
+    </div>
     <script src="js/scripts.js"></script>
+    <script src="js/questions.js"></script>
 </body>
 
 </html>
