@@ -175,3 +175,6 @@ body{
     background-color: #023B70;
     cursor: pointer;
 }
+.container .content_box .content_question ul li label{
+    cursor: pointer;
+}
