@@ -54,7 +54,7 @@
                     <a href="../PemrogramanDasar/MainContent.html"><i class="material-symbols-outlined">terminal</i> Pemrograman Dasar</a>
                 </div></li>
                 <li><div>
-                    <a href="../PemrogramanLanjut/MainContent.html"><i class="material-symbols-outlined">terminal</i> Pemrograman Lanjut</a>
+                    <a href="#"><i class="material-symbols-outlined">terminal</i> Pemrograman Lanjut</a>
                 </div></li>
                 <li>
                     <div>
@@ -75,16 +75,21 @@
         <div class="content-box">
             <ul id="accordion">
                 <li>
-                    <label for="first">Modul 1 - Struktur Dasar Pemrograman C <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <label for="first">Modul 1 - Type of Errors <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
                     <input type="checkbox" name="accordion" id="first" checked>
                     <div class="content">
-                        <h4>Struktur Dasar Pemrograman C</h4>
-                        <p>1. Flowchart
-                           <br>Flowchart adalah representasi visual dari alur eksekusi atau algoritma dalam pemrograman. Flowchart menggunakan simbol-simbol geometris dan panah untuk menggambarkan langkah-langkah atau proses dalam program. Simbol-simbol ini mencakup kotak untuk menunjukkan langkah-langkah, panah untuk menunjukkan aliran kendali, berlian untuk menunjukkan keputusan, dan lainnya. Flowchart membantu dalam pemahaman visual dan pemodelan algoritma sebelum diimplementasikan dalam bahasa pemrograman.
-                           <br><br>2. Variable
-                           <br>Variable adalah suatu tempat dalam memori yang digunakan untuk menyimpan data atau nilai. Dalam Bahasa C, Anda perlu mendeklarasikan variabel sebelum menggunakannya dengan menentukan tipe data dan nama variabel. Variabel dapat digunakan untuk menyimpan berbagai jenis data seperti bilangan bulat, bilangan desimal, karakter, dan lainnya. Setelah deklarasi, Anda dapat menginisialisasi variabel dengan nilai awal dan mengakses nilainya di berbagai bagian program.
-                           <br><br>3. Operator
-                           <br>Operator adalah simbol atau tanda yang digunakan dalam pemrograman untuk melakukan operasi atau manipulasi terhadap variabel atau nilai. Dalam Bahasa C, terdapat berbagai jenis operator, seperti operator aritmatika untuk melakukan operasi matematika seperti penjumlahan, pengurangan, perkalian, dan pembagian. Operator relasional digunakan untuk membandingkan nilai antara dua variabel. Operator logika digunakan untuk menggabungkan kondisi atau ekspresi logika, seperti AND (&&), OR (||), dan NOT (!).
+                        <h4>Type of Errors</h4>
+                        <p>1. Type of Errors (Kesalahan dalam Pemrograman)
+                           <br>Dalam pengembangan perangkat lunak, terdapat beberapa jenis kesalahan atau bug yang dapat terjadi. Beberapa jenis kesalahan umum meliputi:
+                           <br>- Syntax Error: Kesalahan dalam sintaksis kode yang menyebabkan program tidak dapat dikompilasi.
+                           <br>- Runtime Error: Kesalahan yang terjadi saat program sedang berjalan, seperti pembagian dengan nol atau akses indeks di luar batas array.
+                           <br>- Logical Error: Kesalahan yang terjadi saat logika program tidak berfungsi dengan benar, menghasilkan hasil yang tidak sesuai dengan yang diharapkan.
+                           <br><br>2. Defensive Programming
+                           <br>Pemrograman defensif adalah pendekatan dalam penulisan kode yang bertujuan untuk mengurangi kemungkinan terjadinya kesalahan dan membuat program lebih tahan terhadap kondisi yang tidak terduga. Prinsip pemrograman defensif meliputi:
+                           <br>- Validasi Input: Memeriksa dan memvalidasi input pengguna sebelum digunakan dalam program.
+                           <br>- Exception Handling: Menangani pengecualian secara defensif untuk menghindari kegagalan yang tidak terduga dan memberikan informasi yang berguna kepada pengguna.
+                           <br>- Penggunaan Komentar: Menyertakan komentar yang jelas dan informatif dalam kode untuk memudahkan pemeliharaan dan pemahaman kode.
+                           <br>- Pengujian yang Cermat: Melakukan pengujian yang komprehensif dan cermat untuk menemukan dan memperbaiki kesalahan.
                            <br><br> Untuk penjelasan lebih detail dengan contoh codingannya, Kamu bisa menyimak vidio pembelajaran di bawah ini.
                            <br><br>
                         </p>
@@ -92,31 +97,31 @@
                         <h3>Video Penjelasan: </h3>
                         <iframe width="560"
                                 height="315"
-                                src="https://www.youtube.com/embed/-v13GtjMGfc"
-                                title="Modul 1 - Struktur Dasar Bahasa C"
+                                src="https://www.youtube.com/embed/Rl_6AYD8RZE"
+                                title="Modul 1 - Type of Errors"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                             <br/>
-                            <a>Atau klik </a> <a href="https://youtu.be/-v13GtjMGfc">link</a> <a>ini.</a>
+                            <a>Atau klik </a> <a href="https://youtu.be/Rl_6AYD8RZE">link</a> <a>ini.</a>
                         <br/>
                         <br/>
                     
                         <div class="quiz-box">
                             <h3>Quiz Section</h3>
                             <br />
-                            <p>1. Dalam Bahasa C, operator yang digunakan untuk membandingkan kesetaraan nilai antara dua variabel adalah ?</p>
+                            <p>1. Kesalahan yang terjadi saat program sedang berjalan, seperti pembagian dengan nol atau akses indeks di luar batas array, disebut ?</p>
                             <button class="button" onclick="wronganswer1()">
-                            A. >=
+                            A. Syntax Error
                             </button>
                             <button class="button" onclick="wronganswer1()">
-                            B. =
+                            B. Logical Error
                             </button>
                             <button class="button" onclick="rightanswer1()">
-                            C. ==
+                            C. Runtime Error
                             </button>
                             <button class="button" onclick="wronganswer1()">
-                            D. =<
+                            D. Compilation Error
                             </button>
                             <p id="hidden-text1" class="hidden-text1">Jawaban Anda benar!</p>
                             <p id="hidden-text2" class="hidden-text2">
@@ -166,18 +171,19 @@
                     </div> -->
                 </li>
                 <li>
-                    <label for="second">Modul 2 - Fungsi Dasar <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <label for="second">Modul 2 - Program Correctness <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
                     <input type="checkbox" name="accordion" id="second" checked>
                     <div class="content" onclick="toggleDropdown(this)">
-                        <h4>Fungsi Dasar</h4>
-                        <p>Fungsi dalam Bahasa C adalah blok kode yang dapat dipanggil atau dieksekusi untuk melakukan tugas tertentu. Fungsi digunakan untuk mengorganisasi kode program menjadi bagian yang lebih kecil, memisahkan logika program, dan memudahkan pengelolaan dan pemeliharaan kode.
-                           <br><br>Fungsi terdiri dari tiga komponen utama:
-                           <br>1. Deklarasi Fungsi
-                           <br>Deklarasi Fungsi Merupakan pengenalan atau pendefinisian fungsi dengan menentukan nama, tipe data kembalian (jika ada), dan parameter (jika ada).
-                           <br><br>2. Definisi Fungsi
-                           <br>Definisi Fungsi Merupakan implementasi atau isi dari fungsi, yaitu blok kode yang akan dieksekusi saat fungsi dipanggil. Ini termasuk deklarasi variabel lokal, pernyataan, operasi, dan logika yang akan dilakukan oleh fungsi.
-                           <br><br>3. Pemanggilan Fungsi
-                           <br>Pemanggilan Fungsi Merupakan penggunaan atau eksekusi fungsi dalam bagian program utama atau dalam fungsi lain. Pemanggilan fungsi dilakukan dengan menggunakan nama fungsi diikuti dengan tanda kurung dan argumen (jika ada) yang diperlukan oleh fungsi.
+                        <h4>Program Correctness</h4>
+                        <p>Program Correctness (Ketepatan Program) adalah konsep yang berkaitan dengan memastikan bahwa program komputer berfungsi sesuai dengan yang diharapkan dan memberikan hasil yang benar. Terdapat beberapa pendekatan untuk memastikan ketepatan program, antara lain:
+                           <br><br>Inheritance adalah mekanisme dalam pemrograman berorientasi objek di mana suatu kelas dapat mewarisi properti (variabel dan metode) dari kelas lain yang disebut kelas induk atau superclass. Pemahaman konsep ini memungkinkan penggunaan kembali kode dan membentuk hierarki kelas.
+                           <br><br>1. Code Reviews
+                           <br>Code reviews (ulasan kode) adalah proses pemeriksaan dan evaluasi kode program oleh pengembang atau anggota tim lainnya. Tujuannya adalah untuk menemukan bug, kesalahan, atau potensi masalah lainnya dalam kode. Dalam code reviews, pengembang dapat memberikan masukan, saran, dan perbaikan untuk meningkatkan kualitas kode dan memastikan kesesuaian dengan kebutuhan dan standar yang ditetapkan.
+                           <br><br>2. Testing Fundamental
+                           <br>Testing fundamental (pengujian fundamental) melibatkan pengujian fungsionalitas dan logika program. Ini melibatkan pengembangan dan pelaksanaan berbagai jenis pengujian, seperti pengujian input-output, pengujian batasan, pengujian pengolahan data, dan pengujian kasus khusus. Pengujian fundamental membantu untuk memverifikasi bahwa program memberikan hasil yang benar sesuai dengan spesifikasi yang diberikan.
+                           <br><br>3. Unit Testing
+                           <br>Unit testing (pengujian unit) adalah pendekatan pengujian yang dilakukan pada tingkat terkecil komponen program yang disebut unit. Unit dalam konteks ini dapat berupa fungsi, metode, atau kelas yang diuji secara terpisah. Unit testing membantu memastikan bahwa setiap unit program berfungsi dengan benar secara terisolasi dan sesuai dengan harapan.
+                           <br><br>Dalam Bahasa Java, terdapat kerangka kerja pengujian seperti JUnit yang mendukung pengembangan unit testing yang efektif dan otomatis.
                            <br><br> Untuk penjelasan lebih detail dengan contoh codingannya, Kamu bisa menyimak vidio pembelajaran di bawah ini.
                            <br><br>
                         </p>
@@ -185,31 +191,31 @@
                         <h3>Video Penjelasan: </h3>
                         <iframe width="560"
                                 height="315"
-                                src="https://www.youtube.com/embed/KVqwmy_gIPs"
-                                title="Modul 2 - Fungsi Dasar"
+                                src="https://www.youtube.com/embed/Y9sp8gONv9M"
+                                title="Modul 2 - Program Correctness"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                             <br/>
-                            <a>Atau klik </a> <a href="https://youtu.be/KVqwmy_gIPs">link</a> <a>ini.</a>
+                            <a>Atau klik </a> <a href="https://youtu.be/Y9sp8gONv9M">link</a> <a>ini.</a>
                         <br/>
                         <br/>
                         
                         <div class="quiz-box">
                             <h3>Quiz Section</h3>
                             <br />
-                            <p>1. Dalam Bahasa C, pernyataan return dalam sebuah fungsi digunakan untuk ?</p>
+                            <p>1. Pendekatan untuk memastikan ketepatan program yang melibatkan pemeriksaan dan evaluasi kode program oleh pengembang atau anggota tim lainnya disebut ?</p>
                             <button class="button" onclick="wronganswer2()">
-                              A. Memanggil fungsi lain
+                              A. Debugging
                             </button>
                             <button class="button" onclick="wronganswer2()">
-                              B. Melakukan pengulangan
+                              B. Unit Testing
                             </button>
                             <button class="button" onclick="rightanswer2(this)">
-                              C. mengembalikan nilai fungsi
+                              C. Code Reviews
                             </button>
                             <button class="button" onclick="wronganswer2()">
-                              D. Mendeklarasikan variabel
+                              D. Testing Fundamental
                             </button>
                             <p id="hidden-text3" class="hidden-text1">Jawaban Anda benar!</p>
                             <p id="hidden-text4" class="hidden-text2">
@@ -241,26 +247,20 @@
                     </div>
                 </li>
                 <li>
-                  <label for="third">Modul 3 - Struktur Kontrol <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
-                  <input type="checkbox" name="accordion" id="third" checked>
-                  <div class="content" onclick="toggleDropdown(this)">
-                        <h4>Struktur Kontrol</h4>
-                        <p>1. Percabangan (Branching)
-                           <br>Percabangan digunakan untuk mengatur alur eksekusi program berdasarkan kondisi tertentu. Dalam Bahasa C, terdapat tiga jenis pernyataan percabangan yang umum digunakan:
-                           <br>a. If
-                           <br>Pernyataan if digunakan untuk mengevaluasi kondisi dan melakukan tindakan berdasarkan hasil evaluasi kondisi tersebut. Jika kondisi terpenuhi (true), blok kode di dalam if akan dieksekusi, jika tidak (false), blok kode tersebut akan dilewati.
-                           <br>b. If-else
-                           <br>Pernyataan if-else memungkinkan program untuk melakukan tindakan yang berbeda tergantung pada evaluasi kondisi. Jika kondisi dalam if terpenuhi, blok kode di dalam if akan dieksekusi. Jika kondisi tidak terpenuhi, blok kode di dalam else akan dieksekusi.
-                           <br>c. Switch-case
-                           <br>Pernyataan switch-case digunakan untuk memilih tindakan yang akan diambil berdasarkan nilai dari ekspresi yang diberikan. Program akan mengevaluasi ekspresi dan mencocokkannya dengan beberapa nilai yang mungkin. Jika cocok, blok kode terkait akan dieksekusi.
-                           <br><br>2. Perulangan (Loop)
-                           <br>Perulangan digunakan untuk mengulang serangkaian pernyataan atau blok kode berulang kali. Dalam Bahasa C, terdapat tiga jenis pernyataan perulangan yang umum digunakan:
-                           <br>a. While
-                           <br>Pernyataan while akan mengulang blok kode selama kondisi yang ditentukan benar. Kondisi akan dievaluasi sebelum setiap iterasi perulangan. Jika kondisi benar, blok kode akan dieksekusi. Jika kondisi salah, eksekusi keluar dari perulangan.
-                           <br>b. Do-while
-                           <br>Pernyataan do-while mirip dengan pernyataan while, namun kondisi dievaluasi setelah setiap iterasi perulangan. Ini memastikan bahwa setidaknya satu iterasi akan dieksekusi sebelum kondisi dicek. Jika kondisi benar, perulangan akan berlanjut; jika tidak, eksekusi keluar dari perulangan.
-                           <br>c. For
-                           <br>Pernyataan for memberikan cara untuk mengulang serangkaian pernyataan dengan mengatur variabel kendali, kondisi perulangan, dan ekspresi peningkatan. Ini adalah bentuk perulangan yang lebih terstruktur dan terbatas.
+                    <label for="third">Modul 3 - Inheritance, Konsep is-a, Overloading, Super Keyword, dan Modifier Access<span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <input type="checkbox" name="accordion" id="third" checked>
+                    <div class="content" onclick="toggleDropdown(this)">
+                        <h4>Inheritance, Konsep is-a, Overloading, Super Keyword, dan Modifier Access</h4>
+                        <p>1. Inheritance
+                           <br>Inheritance adalah mekanisme dalam pemrograman berorientasi objek di mana suatu kelas dapat mewarisi properti (variabel dan metode) dari kelas lain yang disebut kelas induk atau superclass. Pemahaman konsep ini memungkinkan penggunaan kembali kode dan membentuk hierarki kelas.
+                           <br><br>2. Konsep is-a:
+                           <br>Konsep is-a (adalah) adalah hubungan antara kelas yang menjelaskan bahwa suatu objek adalah contoh atau turunan dari kelas lain. Dalam inheritance, kelas anak adalah jenis dari kelas induk.
+                           <br><br>3. Overloading:
+                           <br>Overloading adalah kemampuan untuk mendefinisikan beberapa metode dengan nama yang sama dalam sebuah kelas, tetapi dengan parameter yang berbeda. Metode yang di-overload memiliki nama yang sama tetapi memiliki tipe atau jumlah parameter yang berbeda.
+                           <br><br>4. Super Keyword:
+                           <br>Super keyword digunakan untuk mengakses properti atau metode dari kelas induk (superclass) dalam kelas anak (subclass). Hal ini berguna ketika ada nama variabel atau metode yang sama di kelas anak dan kelas induk.
+                           <br><br>5. Modifier Access:
+                           <br>Modifier access digunakan untuk mengatur tingkat aksesibilitas suatu variabel, metode, atau kelas. Terdapat empat jenis modifier access di Java: public, private, protected, dan default (tidak ada kata kunci).
                            <br><br> Untuk penjelasan lebih detail dengan contoh codingannya, Kamu bisa menyimak vidio pembelajaran di bawah ini.
                            <br><br>
                         </p>
@@ -268,38 +268,38 @@
                         <h3>Video Penjelasan: </h3>
                         <iframe width="560"
                                 height="315"
-                                src="https://www.youtube.com/embed/g7XbbB-vM5k"
-                                title="Modul 3 - Percabangan dan Perulangan"
+                                src="https://www.youtube.com/embed/6FVqqikiwKY"
+                                title="Modul 3 - Inheritance, Konsep is-a, Overloading, Super Keyword, dan Modifier Access"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                             <br/>
-                            <a>Atau klik </a> <a href="https://youtu.be/g7XbbB-vM5k">link</a> <a>ini.</a>
+                            <a>Atau klik </a> <a href="https://youtu.be/6FVqqikiwKY">link</a> <a>ini.</a>
                         <br/>
                         <br/>
                         
                         <div class="quiz-box">
-                          <h3>Quiz Section</h3>
-                          <br />
-                          <p>1. Dalam Bahasa C, pernyataan perulangan yang akan mengulang blok kode selama kondisi yang ditentukan benar adalah ?</p>
-                          <button class="button" onclick="wronganswer3()">
-                            A. For
-                          </button>
-                          <button class="button" onclick="wronganswer3()">
-                            B. If-else
-                          </button>
-                          <button class="button" onclick="rightanswer3(this)">
-                            C. While
-                          </button>
-                          <button class="button" onclick="wronganswer3()">
-                            D. Do-while
-                          </button>
-                          <p id="hidden-text5" class="hidden-text1">Jawaban Anda benar!</p>
-                          <p id="hidden-text6" class="hidden-text2">
-                            Jawaban Anda salah. Jawaban yang benar adalah "C"
-                          </p>
-                          <br />
-                        </div>
+                            <h3>Quiz Section</h3>
+                            <br />
+                            <p>1. Modifier access yang hanya dapat diakses dari dalam kelas yang sama dan dalam paket yang sama disebut ?</p>
+                            <button class="button" onclick="wronganswer3()">
+                              A. Public
+                            </button>
+                            <button class="button" onclick="wronganswer3()">
+                              B. Private
+                            </button>
+                            <button class="button" onclick="rightanswer3(this)">
+                              C. Default
+                            </button>
+                            <button class="button" onclick="wronganswer3()">
+                              D. Protected
+                            </button>
+                            <p id="hidden-text5" class="hidden-text1">Jawaban Anda benar!</p>
+                            <p id="hidden-text6" class="hidden-text2">
+                              Jawaban Anda salah. Jawaban yang benar adalah "C"
+                            </p>
+                            <br />
+                          </div>
                 
                         <!-- <div class="quiz-box">
                             <h3>Quiz :</h3>
@@ -324,12 +324,24 @@
                     </div>
                 </li>
                 <li>
-                    <label for="four">Modul 4 - Array <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <label for="four">Modul 4 - Modern Programming <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
                     <input type="checkbox" name="accordion" id="four" checked>
                     <div class="content" onclick="toggleDropdown(this)">
-                        <h4>Array</h4>
-                        <p>Array adalah struktur data yang digunakan untuk menyimpan sekumpulan nilai dengan tipe data yang sama. Array memungkinkan kita untuk menyimpan beberapa nilai dalam satu variabel dan mengaksesnya menggunakan indeks. Setiap elemen dalam array memiliki posisi yang disebut indeks, yang dimulai dari 0 untuk elemen pertama, 1 untuk elemen kedua, dan seterusnya.
-                           <br><br>Dalam Bahasa C, array dideklarasikan dengan menentukan tipe data elemen array dan ukuran arraynya. Format umum untuk mendeklarasikan array adalah: 'tipe_data nama_array[ukuran];'. Setelah dideklarasikan, elemen-elemen dalam array dapat diakses dan dimanipulasi dengan menggunakan indeks.
+                        <h4>Modern Programming</h4>
+                        <p>Modern Programming (Pemrograman Modern) mengacu pada praktik dan alat yang digunakan dalam pengembangan perangkat lunak yang lebih efisien, produktif, dan mudah dikelola. Dalam Bahasa Java, ada beberapa elemen modern programming yang umum digunakan:
+                           <br>1. IDE (Integrated Development Environment)
+                           <br>IDE (Integrated Development Environment) adalah perangkat lunak yang menyediakan lingkungan terpadu untuk mengembangkan, menguji, dan mengelola kode program. IDE menyediakan berbagai fitur seperti penyusun kode, debugger, manajemen proyek, dan alat pengujian. Beberapa contoh IDE populer untuk Bahasa Java adalah Eclipse, IntelliJ IDEA, dan NetBeans.
+                           <br><br>2. Fitur Umum IDE
+                           <br>IDE menyediakan berbagai fitur yang membantu pengembang dalam proses pengembangan perangkat lunak. Beberapa fitur umum yang ada dalam IDE adalah:
+                           <br>- Editor Kode yang canggih dengan fitur highlighting, autocompletion, dan refactorisasi kode.
+                           <br>- Debugger untuk memperbaiki bug dan melacak eksekusi program.
+                           <br>- Manajemen Proyek yang memungkinkan pengaturan dan pengelolaan proyek secara terstruktur.
+                           <br>- Integrasi dengan sistem kontrol versi seperti Git untuk kolaborasi dan manajemen perubahan kode.
+                           <br>- Alat Pengujian dan Profiling untuk memvalidasi dan mengoptimalkan performa aplikasi.
+                           <br>- Dokumentasi yang terintegrasi untuk membantu pemahaman kode dan API.
+                           <br><br>3. Code Template
+                           <br>Code template (templat kode) adalah fitur yang disediakan oleh IDE untuk memudahkan dan mempercepat penulisan kode dengan menghasilkan struktur kode yang umum digunakan. Template ini dapat berupa potongan kode yang dapat dengan mudah disisipkan ke dalam editor dan disesuaikan sesuai kebutuhan. Contoh umum code template adalah template untuk membuat class, method, loop, dan lainnya.
+                           <br><br>Dalam pengembangan modern dengan Bahasa Java, IDE membantu mempercepat produktivitas pengembang dengan menyediakan alat yang lengkap dan fitur-fitur yang memudahkan dalam menulis, mengelola, dan menguji kode program.
                            <br><br> Untuk penjelasan lebih detail dengan contoh codingannya, Kamu bisa menyimak vidio pembelajaran di bawah ini.
                            <br><br>
                         </p>
@@ -337,31 +349,31 @@
                         <h3>Video Penjelasan: </h3>
                         <iframe width="560"
                                 height="315"
-                                src="https://www.youtube.com/embed/cdZRmF51qNI"
-                                title="Modul 4 - Array C"
+                                src="https://www.youtube.com/embed/SRNejadVaCY"
+                                title="Modul 4 - Modern Programming"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                             <br/>
-                            <a>Atau klik </a> <a href="https://youtu.be/cdZRmF51qNI">link</a> <a>ini.</a>
+                            <a>Atau klik </a> <a href="https://youtu.be/SRNejadVaCY">link</a> <a>ini.</a>
                         <br/>
                         <br/>
                         
                         <div class="quiz-box">
                             <h3>Quiz Section</h3>
                             <br />
-                            <p>1. Dalam Bahasa C, format umum untuk mendeklarasikan array adalah ?</p>
+                            <p>1. Perangkat lunak yang menyediakan lingkungan terpadu untuk mengembangkan, menguji, dan mengelola kode program dalam Bahasa Java disebut ?</p>
                             <button class="button" onclick="wronganswer4()">
-                              A. tipe_data[ukuran] nama_array;
+                              A. IED
                             </button>
                             <button class="button" onclick="wronganswer4()">
-                              B. nama_array[ukuran] tipe_data;
+                              B. EDI
                             </button>
                             <button class="button" onclick="rightanswer4(this)">
-                              C. tipe_data nama_array[ukuran];
+                              C. IDE
                             </button>
                             <button class="button" onclick="wronganswer4()">
-                              D. nama_array tipe_data[ukuran];
+                              D. DEI
                             </button>
                             <p id="hidden-text7" class="hidden-text1">Jawaban Anda benar!</p>
                             <p id="hidden-text8" class="hidden-text2">
@@ -393,12 +405,18 @@
                     </div>
                 </li>
                 <li>
-                    <label for="five">Modul 5 - String <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <label for="five">Modul 5 - Java Exception <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
                     <input type="checkbox" name="accordion" id="five" checked>
                     <div class="content" onclick="toggleDropdown(this)">
-                        <h4>String</h4>
-                        <p>String adalah kumpulan karakter yang membentuk suatu teks atau urutan karakter. Dalam Bahasa C, String dideklarasikan sebagai array karakter dengan karakter nul ('\0') diakhir sebagai penanda akhir string. String di C juga dapat diperlakukan sebagai tipe data primitif, dan terdapat beberapa fungsi bawaan yang dapat digunakan untuk memanipulasi string.
-                           <br><br>Untuk mendeklarasikan dan menginisialisasi string dalam Bahasa C, dapat menggunakan tipe data char dengan tanda petik ganda ("") untuk mengapit karakter-karakter dalam string. Misalnya: 'char nama[] = "John Doe";'. String juga dapat diakses menggunakan indeks, dan karakter individual dalam string dapat dimanipulasi seperti array.
+                        <h4>Java Exception</h4>
+                        <p>Java Exception merupakan mekanisme dalam bahasa pemrograman Java yang digunakan untuk menangani situasi yang tidak terduga atau kesalahan saat program sedang berjalan. Exception mengacu pada kondisi atau peristiwa yang dapat mengganggu aliran normal program dan memungkinkan kita untuk mengatasi atau menangani situasi tersebut dengan cara yang sesuai.
+                           
+                           <br><br>Ketika suatu kesalahan terjadi dalam program, Java akan menciptakan objek Exception yang mewakili jenis dan detail dari kesalahan tersebut. Kemudian, objek Exception ini dapat ditangkap dan ditangani dengan menggunakan blok try-catch dalam kode program. Dengan menggunakan blok try-catch, kita dapat menentukan tindakan apa yang harus diambil jika suatu exception terjadi, seperti menampilkan pesan kesalahan atau melakukan tindakan perbaikan.
+                           
+                           <br><br>Ada banyak jenis exception yang telah ditentukan di dalam Java, dan setiap jenis exception mewakili situasi atau kesalahan tertentu. Beberapa jenis exception umum termasuk NullPointerException, ArrayIndexOutOfBoundsException, FileNotFoundException, dan lainnya. Selain itu, kita juga dapat membuat exception kustom dengan meng-extend kelas Exception bawaan atau kelas turunannya.
+                           
+                           <br><br>Penggunaan exception handling dalam Java sangat penting untuk menjaga stabilitas dan kehandalan program. Dengan menangani exception secara tepat, kita dapat memberikan pesan yang informatif kepada pengguna, memungkinkan pemulihan dari kesalahan, dan mencegah program dari berhenti secara tidak terduga.
+                           
                            <br><br> Untuk penjelasan lebih detail dengan contoh codingannya, Kamu bisa menyimak vidio pembelajaran di bawah ini.
                            <br><br>
                         </p>
@@ -406,32 +424,32 @@
                         <h3>Video Penjelasan: </h3>
                         <iframe width="560"
                                 height="315"
-                                src="https://www.youtube.com/embed/XcDSskat_U8"
-                                title="Modul 5 - String"
+                                src="https://www.youtube.com/embed/39QE-5a5ryo"
+                                title="Modul 5 - Java Exception"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen>
                         </iframe>
                         <br/>
-                            <a>Atau klik </a> <a href="https://youtu.be/XcDSskat_U8">link</a> <a>ini.</a>
+                            <a>Atau klik </a> <a href="https://youtu.be/39QE-5a5ryo">link</a> <a>ini.</a>
                         <br/>
                         <br/>
                         
                         <div class="quiz-box">
                             <h3>Quiz Section</h3>
                             <br />
-                            <p>1. Dalam Bahasa C, string diakhiri dengan karakter khusus yang disebut ?</p>
+                            <p>1. Dalam pemrograman Java, mekanisme yang digunakan untuk menangani situasi yang tidak terduga atau kesalahan saat program berjalan disebut ?</p>
                             <button class="button" onclick="wronganswer5()">
-                              A. Spasi (' ')
+                              A. Exception Object
                             </button>
                             <button class="button" onclick="wronganswer5()">
-                              B. Karakter '#' (hash)
+                              B. Error Handling
                             </button>
                             <button class="button" onclick="rightanswer5(this)">
-                              C. Nul karakter ('\0')
+                              C. Exception Handling
                             </button>
                             <button class="button" onclick="wronganswer5()">
-                              D. Karakter titik ('.')
+                              D. Error Object
                             </button>
                             <p id="hidden-text9" class="hidden-text1">Jawaban Anda benar!</p>
                             <p id="hidden-text10" class="hidden-text2">
@@ -463,18 +481,16 @@
                     </div>
                 </li>
                 <li>
-                    <label for="six">Modul 6 - Operasi File <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
+                    <label for="six">Modul 6 - Documentation dan Programming Style <span class="material-icons" style="font-size: 28px;">expand_more</span></label>
                     <input type="checkbox" name="accordion" id="six" checked>
                     <div class="content" onclick="toggleDropdown(this)">
-                        <h4>Operasi File</h4>
-                        <p>Operasi File dalam Bahasa C memungkinkan kita untuk membaca data dari file eksternal atau menulis data ke dalam file eksternal. Beberapa operasi dasar yang umum digunakan dalam operasi file adalah:
-                           <br><br>1. Membuka File
-                           <br>Untuk membaca atau menulis ke file, kita perlu membuka file terlebih dahulu menggunakan fungsi fopen(). Fungsi ini menerima dua parameter: nama file dan mode operasi (misalnya "r" untuk membaca, "w" untuk menulis).
-                           <br><br>2. Membaca dan Menulis File
-                           <br>Setelah file dibuka, kita dapat menggunakan fungsi-fungsi seperti fscanf(), fgets(), fgetc() untuk membaca data dari file. Untuk menulis data ke file, kita dapat menggunakan fungsi-fungsi seperti fprintf(), fputs(), fputc(). Data yang dibaca atau ditulis dapat disimpan dalam variabel atau ditampilkan langsung.
-                           <br><br>3. Menutup File
-                           <br>Setelah selesai membaca atau menulis file, penting untuk menutup file dengan menggunakan fungsi fclose(). Ini membebaskan sumber daya yang digunakan oleh file dan memastikan bahwa perubahan yang dilakukan pada file tersimpan.
-                           <br><br>Penting untuk memeriksa apakah file berhasil dibuka atau ditutup dengan memeriksa nilai kembalian fungsi-fungsi tersebut, karena operasi file dapat gagal dalam beberapa situasi (misalnya file tidak ditemukan, izin akses, dll).
+                        <h4>Documentation dan Programming Style</h4>
+                        <p>1. Documentation (Dokumentasi)
+                           <br>Dokumentasi adalah proses pembuatan dan pemeliharaan dokumen yang menjelaskan tentang perangkat lunak yang dikembangkan. Dokumentasi mencakup deskripsi kebutuhan, spesifikasi, desain, panduan pengguna, dan dokumentasi teknis lainnya. Dokumentasi yang baik membantu memahami, menggunakan, dan memperbaiki perangkat lunak dengan efektif, serta meningkatkan kerjasama antara pengembang dan pengguna.
+                           <br><br>2. Programming Style (Gaya Pemrograman)
+                           <br>Gaya pemrograman mengacu pada aturan dan konvensi yang digunakan dalam penulisan kode program. Gaya pemrograman yang baik membantu meningkatkan keterbacaan, pemeliharaan, dan kerja sama dalam pengembangan perangkat lunak. Beberapa contoh elemen gaya pemrograman termasuk penamaan variabel yang konsisten, indentasi yang konsisten, penggunaan komentar yang jelas, dan pengelompokan logis kode.
+                           <br><br>3. Exception Handling (Penanganan Pengecualian/Error)
+                           <br>Exception handling adalah teknik yang digunakan untuk menangani kondisi abnormal atau pengecualian yang terjadi selama eksekusi program. Dalam Bahasa Java, pengecualian diwakili oleh objek yang mewakili kesalahan atau kondisi abnormal tertentu. Dengan menggunakan blok try-catch, kita dapat menangkap dan mengelola pengecualian, termasuk memberikan pesan kesalahan yang informatif kepada pengguna.
                            <br><br> Untuk penjelasan lebih detail dengan contoh codingannya, Kamu bisa menyimak vidio pembelajaran di bawah ini.
                            <br><br>
                         </p>
@@ -482,31 +498,31 @@
                         <h3>Video Penjelasan: </h3>
                         <iframe width="560"
                                 height="315"
-                                src="https://www.youtube.com/embed/uY1MpMYKCbo"
-                                title="Modul 6 - Operasi File"
+                                src="https://www.youtube.com/embed/bUN2RADEEFs"
+                                title="Modul 6 - Documentation and Programming Style"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                             <br/>
-                            <a>Atau klik </a> <a href="https://youtu.be/uY1MpMYKCbo">link</a> <a>ini.</a>
+                            <a>Atau klik </a> <a href="https://youtu.be/bUN2RADEEFs">link</a> <a>ini.</a>
                         <br/>
                         <br/>
                         
                         <div class="quiz-box">
                             <h3>Quiz Section</h3>
                             <br />
-                            <p>1. Operasi yang dilakukan untuk membuka file dalam Bahasa C menggunakan fungsi ?</p>
+                            <p>1. Penanganan pengecualian/error dalam Bahasa Java dilakukan dengan menggunakan blok ?</p>
                             <button class="button" onclick="wronganswer6()">
-                              A. scanf()
+                              A. while-catch
                             </button>
                             <button class="button" onclick="wronganswer6()">
-                              B. openf()
+                              B. while-loop
                             </button>
                             <button class="button" onclick="rightanswer6(this)">
-                              C. fopen()
+                              C. try-catch
                             </button>
                             <button class="button" onclick="wronganswer6()">
-                              D. fscan()
+                              D. catch-try
                             </button>
                             <p id="hidden-text11" class="hidden-text1">Jawaban Anda benar!</p>
                             <p id="hidden-text12" class="hidden-text2">
