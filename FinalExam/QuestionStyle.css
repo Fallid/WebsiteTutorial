@@ -94,6 +94,19 @@ body{
     padding: 0px 0px 0px 0px; /*Mengatur padding dalam box konten*/
 }
 
+.finish_box{
+    position: fixed;
+    margin-top: 200px;
+    margin-left: 340px;
+    margin-right: 25px;
+    /* margin-right: auto; */
+    display: none;
+    width: 75%;
+    height: 100px;
+    z-index: 3;
+    background-color: #023B70;
+}
+
 .content_box{
     width: 75%;
     margin-top: 100px;
