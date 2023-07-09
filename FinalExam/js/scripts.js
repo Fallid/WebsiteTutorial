@@ -77,10 +77,9 @@ var expire = setInterval(function () {
     }
 }, 1000);
 
+//Variabel for validation
+const valid = document.getElementById("validation");
 
-//Question Display
-
-  
 //Question Variabel
 const quiz = document.getElementById("quiz");
 const answerEls = document.querySelectorAll(".answer");
@@ -148,7 +147,7 @@ function getSelected(){
             answer = answerEl.id
         }
     })
-    localStorage.setItem("option", answer);
+    localStorage.setItem(currentQuiz, answer);
     return answer;
 }
 
@@ -156,14 +155,18 @@ function getSelected(){
 btnNext.addEventListener('click', () =>{
     const answer = getSelected()
     if(answer){
+        valid.style.backgroundColor = "#39FF14";
         if (answer === quizData[currentQuiz].correct){
             score++;
             localStorage.setItem("score", score);
         }
     }
     currentQuiz++;
-    if(currentQuiz > quizData.length-1){
+    if(currentQuiz >= quizData.length-1){
         currentQuiz = quizData.length -1;
+        btnNext.innerText = "Submit";
+        Submit(localStorage.getItem("score"));
+
     }
     if(currentQuiz < quizData.length){
         loadQuiz();
@@ -171,6 +174,12 @@ btnNext.addEventListener('click', () =>{
         '<button onclick="location.reload()"> Reload </button>'
     } 
 })
+
+function Submit(score){
+    let scoreMulti = 10
+    score = score * scoreMulti
+    localStorage.setItem("finalScore", score)
+}
 
 //for prev question btn
 btnPrev.addEventListener('click', () => {
