@@ -1,0 +1,41 @@
+<%- include('components/header.ejs', {styleLink: '/css/style.css'}); %>
+
+<body>
+  <%- include('components/navbar.ejs'); %>
+  <div class="container">
+    <div class="content-box">
+      <div class="headerbox">
+        <h2>Final Exam</h2>
+      </div>
+
+      <div
+        class="contenttext"
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 20px;
+        "
+      >
+        <div
+          style="
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          "
+        >
+          <p>This quiz opened at Thursday, 6 April 2023, 9:19 AM</p>
+          <p>This quiz will close on Monday, 17 April 2023, 11:59 PM.</p>
+          <p>Time limit: 1 hour</p>
+          <p>Grading method: Last attempt</p>
+        </div>
+        <a class="btn-primary" href="/questions">Attempt Quiz</a>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="js/scripts.js"></script> -->
+</body>
+<%- include('components/footer.ejs'); %>
