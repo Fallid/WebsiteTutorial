@@ -1,0 +1,24 @@
+{
+  "name": "final-exam",
+  "version": "1.0.0",
+  "description": "Final Exam",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "keywords": [
+    "expressjs",
+    "final-exam",
+    "api"
+  ],
+  "author": "ejee, bazoka-kaka",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
